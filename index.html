@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Miner - Devenez Riche!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">⚡ CRYPTO MINER ⚡</h1>
+            <p>Devenez le roi de la cryptomonnaie!</p>
+        </div>
+        
+        <div class="stats-panel">
+            <div class="main-stats">
+                <div class="stat">
+                    <div>💰 Cryptos</div>
+                    <div class="stat-value" id="coins">0</div>
+                </div>
+                <div class="stat">
+                    <div>⚡ Par Clic</div>
+                    <div class="stat-value" id="perClick">1</div>
+                </div>
+                <div class="stat">
+                    <div>🔥 Par Seconde</div>
+                    <div class="stat-value" id="perSecond">0</div>
+                </div>
+                <div class="stat">
+                    <div>🏆 Niveau</div>
+                    <div class="stat-value" id="level">1</div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="levelProgress"></div>
+            </div>
+        </div>
+        
+        <div class="mining-area">
+            <div class="click-area">
+                <button class="mine-button" id="mineButton">
+                    ⛏️<br>MINER!
+                </button>
+                <p>Cliquez pour miner des cryptos!</p>
+                <p id="clickBonus">Bonus de clic: x1.0</p>
+            </div>
+            
+            <div class="upgrades-panel">
+                <h2>🚀 Améliorations</h2>
+                <div class="upgrades-grid" id="upgradesContainer">
+                    <!-- Les améliorations seront générées par JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="premium-section">
+            <h2 class="premium-title">💎 PREMIUM MINER 💎</h2>
+            <p>Accélérez votre progression avec nos packs premium!</p>
+            
+            <div class="premium-benefits">
+                <div class="premium-benefit">
+                    <h3>🚀 Boost x2</h3>
+                    <p>Double tous vos gains pendant 1 heure</p>
+                    <button class="premium-button" onclick="buyBoost(2, 1)">2.99€</button>
+                </div>
+                <div class="premium-benefit">
+                    <h3>⚡ Mega Boost x5</h3>
+                    <p>Quintuple vos gains pendant 30 minutes</p>
+                    <button class="premium-button" onclick="buyBoost(5, 0.5)">4.99€</button>
+                </div>
+                <div class="premium-benefit">
+                    <h3>💰 Pack de Cryptos</h3>
+                    <p>1 000 000 cryptos instantanées</p>
+                    <button class="premium-button" onclick="buyCryptos(1000000)">9.99€</button>
+                </div>
+                <div class="premium-benefit">
+                    <h3>🎯 Auto-Clicker</h3>
+                    <p>Clique automatiquement 5 fois par seconde</p>
+                    <button class="premium-button" onclick="buyAutoClicker()">19.99€</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
